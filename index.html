@@ -11,6 +11,13 @@
     <div class="game">
       <!-- name of the app -->
       <div class="name">Typing Speed Test Game</div>
+      <!-- level form -->
+      <form action="">
+        <span>Choose level : </span>
+        <label> <input type="radio" name="level" checked />Easy</label>
+        <label> <input type="radio" name="level" />Meduim</label>
+        <label> <input type="radio" name="level" />Hard</label>
+      </form>
       <!-- message to user -->
       <div class="message">
         You Are Playing On <span class="level"></span> level & You Have
@@ -20,14 +27,14 @@
       <!-- start button -->
       <div class="start">Start Playing</div>
       <!-- the word -->
-      <div class="the-word">Hello</div>
+      <div class="the-word"></div>
       <!-- the input -->
       <input type="text" class="input" />
       <!-- upComing words -->
       <div class="upcoming-words">Words Will Show Here</div>
       <!-- control box -->
       <div class="control">
-        <div class="time">Time Left: <span></span> seconds</div>
+        <div class="time">Time Left: <span>0</span> seconds</div>
         <div class="score">
           Score : <span class="got">0</span> form <span class="total"></span>
         </div>

@@ -8,7 +8,7 @@ body {
 $main-color: #2196f3;
 
 .game {
-  width: 800px;
+  width: 70%;
   padding: 15px;
   margin: 50px auto;
   border-radius: 5px;
@@ -25,6 +25,13 @@ $main-color: #2196f3;
     color: #fff;
   }
 
+  form {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
   .message {
     margin: 10px 0;
     background-color: #ccc;
@@ -36,6 +43,7 @@ $main-color: #2196f3;
 
     span {
       color: #009688;
+      font-weight: bold;
 
       &::after {
         content: " ]";
@@ -62,7 +70,7 @@ $main-color: #2196f3;
   }
 
   .the-word {
-    background-color: #fff;
+    // background-color: #fff;
     padding: 10px;
     margin: 10px 0;
     font : {
@@ -72,6 +80,7 @@ $main-color: #2196f3;
     color: $main-color;
     text-align: center;
     border-radius: 5px;
+    user-select: none;
   }
 
   .input {
@@ -94,6 +103,7 @@ $main-color: #2196f3;
     margin: 10px 0;
     border-radius: 5px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     div {
@@ -112,10 +122,12 @@ $main-color: #2196f3;
     align-items: center;
     background-color: #fff;
     padding: 10px;
+    margin-top: 10px;
     border-radius: 5px;
 
     span {
       color: #009688;
+      font-weight: bold;
     }
   }
 
@@ -124,5 +136,8 @@ $main-color: #2196f3;
     padding: 10px;
     font-size: 40px;
     color: $main-color;
+    &.bad {
+      color: #f00;
+    }
   }
 }
